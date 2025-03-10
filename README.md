@@ -60,6 +60,13 @@ We welcome contributions from the community! To get started:
 3. Commit and push your changes.
 4. Submit a pull request.
 
+## 🔬 Future Roadmap
+✅ **Implement GAN-based CT Denoising** (AI-powered artifact reduction)  
+✅ **Support cloud-based Monte Carlo simulations**  
+✅ **Integrate Web Visualization Tools** (e.g., Three.js for interactive 3D rendering)  
+✅ **Develop AI-assisted inpainting for limited-angle CT**  
+✅ **Create an API for real-time CT reconstruction**  
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
 ## 📜 License
