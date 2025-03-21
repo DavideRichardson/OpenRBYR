@@ -1,0 +1,28 @@
+# save_denoising_model.py
+
+import torch
+import torch.nn as nn
+import os
+
+# Define the same model architecture as in ai_models.py
+class DenoisingModel(nn.Module):
+    def __init__(self):
+        super(DenoisingModel, self).__init__()
+        self.conv1 = nn.Conv2d(1, 16, kernel_size=3, padding=1)
+        self.relu = nn.ReLU()
+        self.conv2 = nn.Conv2d(16, 1, kernel_size=3, padding=1)
+    
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.relu(x)
+        x = self.conv2(x)
+        return x
+
+# Create the model
+model = DenoisingModel()
+
+# Initialize weights (random or custom training if needed)
+torch.save(model.state_dict(), "models/denoising_model.pth")
+
+print("✅ denoising_model.pth saved to models/")
+
